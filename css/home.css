@@ -1,0 +1,122 @@
+.delorean-section-one {
+  position: relative;
+}
+
+.delorean-description {
+  position: absolute;
+  top: 14px;
+  left: 16px;
+  color: #0765dc;
+  margin-top: 14px;
+  font-weight: 600;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.delorean-description input {
+  padding: 10px 24px;
+  border: 1px solid #3a3a3a;
+  color: #171717;
+  background-color: #4c96d7;
+  margin-top: 14px;
+  font-weight: 700;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.delorean-description input:hover {
+  color: #ffffff;
+  background-color: #3a3a3a;
+  border: 1px solid #4c96d7;
+}
+
+.delorean-section-two .section {
+  background-color: #4c96d7;
+  max-width: 200px;
+  align-items: center;
+  margin: 10px;
+  border: 1px solid #3a3a3a;
+}
+
+.section img {
+  display: block;
+  margin: 0 auto;
+}
+
+.reviews {
+  color: #3a3a3a;
+}
+
+.delorean-section-two {
+  display: flex;
+  justify-content: space-around;
+  color: #3a3a3a;
+}
+
+.delorean-upgrades {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+}
+
+.delorean-upgrades-img {
+  background-color: #4c96d7;
+  padding: 0 60px;
+  margin: 10px;
+  border: 1px solid #3a3a3a;
+}
+
+.reviews h2 {
+  margin-bottom: 14px;
+}
+
+@media (max-width: 575.98px) {
+  body {
+    background-color: #ffffff;
+    background-image: none;
+  }
+
+  .wrapper {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  .delorean-description {
+    font-size: 10px;
+    margin-top: 0;
+  }
+  .delorean-section-two {
+    flex-direction: column-reverse;
+  }
+
+  .delorean-upgrades-img {
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+  }
+  .reviews li {
+    margin-left: 16px;
+  }
+  .reviews {
+    margin: 16px 0;
+  }
+  .delorean-description input {
+    display: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .delorean-description {
+    font-size: 8px;
+    margin-top: 0;
+  }
+  .delorean-section-two {
+    flex-direction: column-reverse;
+  }
+  .wrapper {
+    max-width: 100%;
+  }
+}
